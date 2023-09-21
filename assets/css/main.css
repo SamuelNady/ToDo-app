@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: Courier;
+}
+
+body {
+    background-color: #444;
+    color: white;
+}
+
+.inp {
+    background-color: #292929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px auto;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+
+.control .container {
+    padding-top: 50px;
+}
+
+.control .container h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.control .container .row {
+    width: 100%;
+}
+
+.control .container .row input {
+    width: 100%;
+}
+
+.control .container .row button {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px auto;
+}
+
+@media (min-width: 992px) {
+    .control .container .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .control .container .row input {
+        flex-basis: 80%;
+    }
+
+    .control .container .row button {
+        display: inline;
+        flex-basis: 15%;
+        margin: 0;
+        padding: 9px;
+    }
+}
+
+/* start tasks */
+.tasks .container h2 {
+    margin: 50px 0 30px 0;
+}
+
+.tasks .container .item {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.tasks .container .item input {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .tasks .container .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .tasks .container .item input{
+        flex-basis: 80%;
+    }
+
+    .tasks .container .item div{
+        flex-basis: 15%;
+    }
+
+    .tasks .container .item div button {
+        margin: 5px 0;
+        width: 100%;
+        padding: 9px;
+    }
+}
